@@ -58,7 +58,9 @@ function App() {
       <div className="boxes-container">
         <textarea id="editor" className="editor" value={markdownText} onChange={(e) => setMarkdownText(e.target.value)}></textarea>
         <div id="preview">
-          <Markdown children={markdownText} />
+          <Markdown>
+            {markdownText}
+          </Markdown>
         </div>
       </div>
     </div>
